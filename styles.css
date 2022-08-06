@@ -1,0 +1,146 @@
+body{
+    margin: 0;
+    
+    font-family: 'Roboto', sans-serif;
+
+    background: rgba(253, 252, 252, 0.281);
+    /* padding-right: 10px;
+    padding-left: 10px; */
+    background-image: url("images/4848-dj.jpg");
+    background-size: cover;
+    overflow-x: hidden;
+}
+.body-container{
+    /* background-image: url("images/4848-dj.jpg");
+    background-size: cover; */
+    background-color: rgba(71, 159, 236, 0.137);
+    padding: 15px;
+}
+.header-container{
+    border: 1px solid ;
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    
+}
+
+.header-logo img{
+    background-color: white;
+    border-radius: 10px;
+}
+span{
+    color: white;
+    -webkit-text-stroke-width: medium;
+    
+    padding: 6px;
+    
+}
+h2{
+    color: white;
+    margin: auto;
+}
+.header-container ul{
+    display: flex;
+   
+
+}
+.header-container ul li{
+    padding-right: 20px;
+    list-style: none;
+    
+}
+a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+.card-play{
+    display: flex;
+    
+    height: 316px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    justify-content: center;
+}
+
+@media screen and (max-width: 768px){
+    .card-play{
+        display: flex;
+        
+        height: 316px;
+        overflow-x: scroll;
+        overscroll-behavior-x: contain;
+        scroll-snap-type: x proximity;
+        justify-content: space-between;
+    }
+}
+
+
+.genero{
+    padding: 10px;
+   
+}
+.genero span{
+    text-align: center;
+}
+.player{
+    min-width: 320px;
+    background-image: linear-gradient(#0000003b, #df2fb963);
+    border-radius: 1rem;
+    padding: 2rem;
+    color: white;
+    box-shadow: 2px 2px 3px #be3fc7f5;
+}
+.title{
+    margin-top: 0;
+    text-align: center;
+}
+.cover{
+    width: 128px;
+    height: auto;
+    border-radius: .3rem;
+    display: block;
+    margin: 0 auto 1rem auto;
+}
+.progress-container{
+    height: .6rem;
+    background-color: lightgray;
+    margin-bottom: 1rem;
+}
+.progress{
+    background-color: rgb(231, 36, 78);
+    width: 0;
+    height: 100%;
+}
+.controls{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 1rem;
+}
+.controls button{
+    background-color: transparent;
+    border: none;
+}
+.controls i{
+    font-size: 1.7rem;
+    color: white;
+}
+.songs{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+}
+.songs li{
+    margin-bottom: 1rem;
+
+}
+.songs a{
+    color: lightgray;
+    text-decoration: none;
+}
+.songs a.active{
+    color: white;
+    font-weight: bold;
+}
